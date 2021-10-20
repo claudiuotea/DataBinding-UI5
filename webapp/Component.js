@@ -1,7 +1,8 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
-	"sap/ui/model/json/JSONModel"
- ], function (UIComponent, JSONModel) {
+	"sap/ui/model/json/JSONModel",
+	"sap/ui/model/BindingMode"
+ ], function (UIComponent, JSONModel, BindingMode) {
 	"use strict";
 	return UIComponent.extend("sap.ui.demo.databinding.Component", {
 	   metadata : {
@@ -18,6 +19,9 @@ sap.ui.define([
 			  enabled:true,
 			  panelHeaderText: "Data Binding Basics"
 		  });
+
+		  //HERE!
+		  oModel.setDefaultBindingMode(BindingMode.OneWay);
 
 		  this.setModel(oModel);
 	   }
