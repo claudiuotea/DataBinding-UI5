@@ -25,7 +25,8 @@ sap.ui.define([
 				  country:"Narnia"
 			  },
 			  salesAmount: 12345.678,
-			  currencyCode: "EUR"
+			  currencyCode: "EUR",
+			  priceThreshold: 20
 		  });
 		
 		  var oProductModel = new JSONModel();
