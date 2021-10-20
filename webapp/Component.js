@@ -13,7 +13,10 @@ sap.ui.define([
 		  UIComponent.prototype.init.apply(this, arguments);
 
 		  var oModel = new JSONModel({
-			  greetingText: "Hi, men!"
+			  firstName: "Claudiu",
+			  lastName: "Otea",
+			  enabled:true,
+			  panelHeaderText: "Data Binding Basics"
 		  });
 
 		  this.setModel(oModel);
