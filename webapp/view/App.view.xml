@@ -1,0 +1,11 @@
+<mvc:View
+		controllerName="sap.ui.demo.databinding.controller.App"
+		xmlns="sap.m"
+		xmlns:mvc="sap.ui.core.mvc"
+		displayBlock="true">
+<Shell>
+	<App id="app">
+		<Text text = "{/greetingText}"/>
+	</App>
+</Shell>
+</mvc:View>
