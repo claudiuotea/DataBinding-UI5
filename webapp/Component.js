@@ -23,7 +23,9 @@ sap.ui.define([
 				  city:"Walldorf",
 				  zip:"420090",
 				  country:"Narnia"
-			  }
+			  },
+			  salesAmount: 12345.678,
+			  currencyCode: "EUR"
 		  });
 
 		  //HERE!
