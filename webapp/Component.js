@@ -18,6 +18,12 @@ sap.ui.define([
 			  firstName: "Claudiu",
 			  lastName: "Otea",
 			  enabled:true,
+			  address: {
+				  street: "Dietmar-Hopp-Allee-16",
+				  city:"Walldorf",
+				  zip:"420090",
+				  country:"Narnia"
+			  }
 		  });
 
 		  //HERE!
