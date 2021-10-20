@@ -27,15 +27,14 @@ sap.ui.define([
 			  salesAmount: 12345.678,
 			  currencyCode: "EUR"
 		  });
+		
+		  var oProductModel = new JSONModel();
+		  oProductModel.loadData("./model/Products.json");
+		  this.setModel(oProductModel, "products");
 
 		  //HERE!
-		  oModel.setDefaultBindingMode(BindingMode.OneWay);
+		//   oModel.setDefaultBindingMode(BindingMode.OneWay);
 		  
-		//   var oResourceModel = new ResourceModel({
-		// 	bundleName: "sap.ui.demo.databinding.i18n.i18n",
-		// 	supportedLocales: ["", "de"],
-		// 	fallbackLocale: ""
-		//   });
 		  this.setModel(oModel);
 	   }
 	});
