@@ -1,8 +1,9 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
 	"sap/ui/model/json/JSONModel",
-	"sap/ui/model/BindingMode"
- ], function (UIComponent, JSONModel, BindingMode) {
+	"sap/ui/model/BindingMode",
+	"sap/ui/model/resource/ResourceModel"
+ ], function (UIComponent, JSONModel, BindingMode,ResourceModel) {
 	"use strict";
 	return UIComponent.extend("sap.ui.demo.databinding.Component", {
 	   metadata : {
@@ -17,12 +18,16 @@ sap.ui.define([
 			  firstName: "Claudiu",
 			  lastName: "Otea",
 			  enabled:true,
-			  panelHeaderText: "Data Binding Basics"
 		  });
 
 		  //HERE!
 		  oModel.setDefaultBindingMode(BindingMode.OneWay);
-
+		  
+		//   var oResourceModel = new ResourceModel({
+		// 	bundleName: "sap.ui.demo.databinding.i18n.i18n",
+		// 	supportedLocales: ["", "de"],
+		// 	fallbackLocale: ""
+		//   });
 		  this.setModel(oModel);
 	   }
 	});
